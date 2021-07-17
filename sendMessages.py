@@ -16,7 +16,7 @@ async def on_ready():
         indx += 1
         member = await bot.fetch_user(i)
         try:
-            await memeber.send("YOUR MESSAGE HERE")
+            await member.send("YOUR MESSAGE HERE")
             print(f" [+] Sent message {indx} / {len(data)}")
         except Exception as e:
             print(f" [!] {e}")
